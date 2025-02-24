@@ -41,6 +41,7 @@ architecture Behavioral of sevenseg_decoder is
 begin
 -- Behavioral model for one-hot decoder
     with i_Hex select
+        --flip all bits bc backwards
         o_seg_n <=  "1000000" when "0000",  -- 0
                     "1111001" when "0001",  -- 1
                     "0100100" when "0010",  -- 2
