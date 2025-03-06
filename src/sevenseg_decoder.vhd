@@ -60,5 +60,5 @@ begin
                     "0001110" when "1111",  -- F
                     "1111111" when others;  -- default all off
 
-
+        
 end Behavioral;
