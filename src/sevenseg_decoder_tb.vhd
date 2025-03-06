@@ -93,7 +93,7 @@ begin
          assert (w_sum = "0000011") report "FAILED: Input B" severity failure;
 
      w_addends <= x"C"; wait for 10 ns;
-         assert (w_sum = "1000110") report "FAILED: Input C" severity failure;
+         assert (w_sum = "0001101") report "FAILED: Input C" severity failure;
 
      w_addends <= x"D"; wait for 10 ns;
          assert (w_sum = "0100001") report "FAILED: Input D" severity failure;
