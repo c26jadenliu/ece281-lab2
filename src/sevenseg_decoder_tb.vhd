@@ -85,7 +85,7 @@ begin
 
      w_addends <= x"9"; wait for 10 ns;
          assert (w_sum = "0010000") report "FAILED: Input 9" severity failure;
-
+         report "Output for 9: " & std_logic_vector'image(w_sum);
      w_addends <= x"A"; wait for 10 ns;
          assert (w_sum = "0001000") report "FAILED: Input A" severity failure;
 
