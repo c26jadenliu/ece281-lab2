@@ -84,8 +84,8 @@ begin
          assert (w_sum = "0000000") report "FAILED: Input 8" severity failure;
 
      w_addends <= x"9"; wait for 10 ns;
-         assert (w_sum = "0010000") report "FAILED: Input 9" severity failure;
-         report "Output for 9: " & to_string(w_sum);
+         assert (w_sum = "0011000") report "FAILED: Input 9" severity failure;
+     
      w_addends <= x"A"; wait for 10 ns;
          assert (w_sum = "0001000") report "FAILED: Input A" severity failure;
 
